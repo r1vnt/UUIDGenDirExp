@@ -1,0 +1,71 @@
+.TH UUIDGenDirExp (1) 2024-04-29 GNU
+
+.SH NAME
+UUIDGenDirExp \- UUID Generation and Directory Exploration
+
+.SH SYNOPSIS
+.B UUIDGenDirExp
+\fB\-1\fR[\fIfilePath\fR | \fIdirectoryPath\fR]
+\fB\-2\fR[\fIfilePath\fR | \fIdirectoryPath\fR]
+\fB\-3\fR[\fIfilePath\fR | \fIdirectoryPath\fR]
+\fB\-4\fR[\fIfilePath\fR | \fIdirectoryPath\fR]
+\fB\-5\fR[\fIfilePath\fR | \fIdirectoryPath\fR]
+\fB\-G\fR[\fIfilePath\fR | \fIdirectoryPath\fR]
+\fB-P\fR[\fInumber\fR | \fBA\fR]
+\fB\-F\fR[\fIfilePath\fR | \fIdirectoryPath| "pwd"\fR]
+\fB\-S\fR[\fIfilePath\fR | \fIdirectoryPath| "pwd"\fR]
+\fB\-L\fR[\fIfilePath\fR | \fIdirectoryPath| "pwd"\fR]
+\fB\-W\fR[\fIfilePath\fR | \fIdirectoryPath\fR]
+\fB\-T\fR
+\fB\-H\fR
+
+
+.SH DESCRIPTION
+.B UUIDGenDirExp
+A tool that can generate and assign UUID1,2,3,4,5 to Directories and Files, where they are stored within a log file without the use of UUID Generators, display a numerical/all previously generated UUIDs. This tool also has the ability to explore and categorise directories, giving users insight on the files stored within it. Finally this tool logs all user movement in terms of using this tool in a logFile, called "logFile.txt"
+
+.SH OPTIONS
+.TP
+.BR \-1
+Generates Universally Unique Identifier (Version 1) for specified File or Directory.
+.TP
+.BR \-2
+Generates Universally Unique Identifier (Version 2) for specified File or Directory.
+.TP
+.BR \-3
+Generates Universally Unique Identifier (Version 3) for specified File or Directory.
+.TP
+.BR \-4
+Generates Universally Unique Identifier (Version 4) for specified File or Directory.
+.TP
+.BR \-5
+Generates Universally Unique Identifier (Version 5) for specified File or Directory.
+.TP
+.BR \-G
+Grabs Universally Unique Identifier for specified File or Directory from UUIDGeneration.txt, to be printed and/or written to file.
+.TP
+.BR \-P
+Reports previously generated UUIDs, number option (e.g,5) will report "n" amount of previous generations, A, will report full amount of generations.
+.TP
+.BR \-F
+Reports what how many of each file type there is in a directory, and it's respective sub-directories, then displays how much the size per/file type.
+.TP
+.BR \-S
+Reports size of Directory, including and excluding it's subdirectories, as well as the seperate size of each of it's respective sub-directories.
+.TP
+.BR \-L
+Reports the length of each file name/subdirectories within a file, in a list from ascending to descending, finally displaying the shortest and LONGEST named FILE (excluding subdirectories).
+.TP
+.BR \-W
+Writes reports to specified file.
+.TP
+.BR \-T
+Writes reports to terminal.
+.TP
+.BR \-H
+Help command, displays the man page.
+
+.SH FILES
+.TP
+.I ~/UUIDGenDirExp.sh
+.I ~/UUIDGenDirExpManPage.sh
